@@ -1,0 +1,29 @@
+﻿<Window x:Class="KURS.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KURS"
+        mc:Ignorable="d"
+        Title="LoginPage" Height="450" Width="800">
+    <Grid>
+       <TabControl Visibility="Visible">
+        <TabItem Header="Поставщик" Margin="-2,-2,-2,0" Height="22" VerticalAlignment="Top">
+            <Frame Name="supplierFrame" Navigated="supplierFrame_Navigated"/>
+        </TabItem>
+        <TabItem Header="Покупатель">
+            <Frame Name="customerFrame" Navigated="customerFrame_Navigated"/>
+        </TabItem>
+        <TabItem Header="Продукт">
+            <Frame Name="productFrame" Navigated="productFrame_Navigated"/>
+        </TabItem>
+        <TabItem Header="Накладная">
+            <Frame Name="invoiceFrame" Navigated="invoiceFrame_Navigated"/>
+        </TabItem>
+        <TabItem Header="Отчеты">
+            <Frame Name="reportFrame" Navigated="reportFrame_Navigated"/>
+        </TabItem>
+    </TabControl> 
+    </Grid>
+   
+</Window>
